@@ -1,0 +1,22 @@
+# Ignoruje node_modules
+node_modules/
+
+# Ignoruje build složky
+dist/
+build/
+
+# Ignoruje logy
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignoruje systémové soubory
+.DS_Store
+Thumbs.db
+
+# Ignoruje IDE soubory
+.vscode/
+.idea/
+
+# Ignoruje environment variables
+.env
