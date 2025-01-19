@@ -1,0 +1,104 @@
+@use "sass:color";
+
+$app-bg: #fff;
+$table-header-bg: #ddd;
+$table-border-color: #ccc;
+$text-color: #333;
+$button-bg: #3498db;
+$button-text-color: #fff;
+$button-hover-bg: color.adjust($button-bg, $lightness: -5%);
+$row-hover-bg: #f9f9f9;
+$label-width: 80px;
+
+.app-container {
+  margin: 20px;
+  background-color: $app-bg;
+  color: $text-color;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+
+  h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+}
+
+.employee-list {
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+    thead {
+      tr {
+        th {
+          background-color: $table-header-bg;
+          text-align: left;
+          padding: 8px;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        &:hover {
+          background-color: $row-hover-bg;
+        }
+        td {
+          border: 1px solid $table-border-color;
+          padding: 8px;
+        }
+      }
+    }
+
+    button {
+      margin-right: 8px;
+      background-color: $button-bg;
+      color: $button-text-color;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      padding: 6px 12px;
+      font-size: 14px;
+
+      &:hover {
+        background-color: $button-hover-bg;
+      }
+    }
+  }
+}
+
+.employee-form {
+  margin-top: 10px;
+
+  div {
+    margin-bottom: 8px;
+  }
+
+  label {
+    display: inline-block;
+    width: $label-width;
+  }
+
+  input {
+    padding: 4px;
+    border: 1px solid $table-border-color;
+    border-radius: 3px;
+    font-size: 14px;
+    width: 200px;
+  }
+
+  button {
+    margin-right: 8px;
+    background-color: $button-bg;
+    color: $button-text-color;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 6px 12px;
+    font-size: 14px;
+
+    &:hover {
+      background-color: $button-hover-bg;
+    }
+  }
+}
