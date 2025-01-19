@@ -40,4 +40,12 @@ Tento malý projekt ukazuje, jak vyvíjet frontend aplikaci v Reactu a TypeScrip
    ```bash
    git clone https://github.com/uzivatel/employee-management-demo.git
 
-2. npm start
+2.Přejděte do složky projektu a nainstalujte závislosti:
+
+cd employee-management-demo
+npm install
+
+3. Spusťte vývojový server:
+
+npm start
+   
